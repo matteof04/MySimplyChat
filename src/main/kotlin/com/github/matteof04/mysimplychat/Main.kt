@@ -26,6 +26,12 @@ const val HOSTNAME = "127.0.0.1"
 val commandsHandler = CommandsHandler()
 
 fun main() {
+    println("""
+        MySimplyChat  Copyright (C) 2022  Matteo Franceschini
+        This program comes with ABSOLUTELY NO WARRANTY.
+        This is free software, and you are welcome to redistribute it
+        under GNU GPLv3.
+    """.trimIndent())
     println("\nMySimplyChat: simple websocket-based chat system\n")
     commands.forEach { commandsHandler.registerCommand(it) }
     print("Enter username: ")
